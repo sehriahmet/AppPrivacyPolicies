@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Focus Area – Privacy & Permissions</title>
+  <meta name="description" content="Privacy policy and permissions overview for the My Focus Area Android app by Ahmet Sehriyaroglu." />
+  <style>
+    :root {
+      --maxw: 820px;
+      --radius: 12px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      line-height: 1.6;
+      color: #111;
+      background: #f7f7fb;
+    }
+    header {
+      background: white;
+      border-bottom: 1px solid #eee;
+    }
+    .wrap {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    h1, h2, h3 {
+      line-height: 1.2;
+      margin: 0 0 12px;
+    }
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.25rem; margin-top: 20px; }
+    p { margin: 0 0 12px; }
+    ul { margin: 0 0 16px 22px; }
+    footer {
+      margin-top: 24px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .muted { color: #555; }
+    .cta {
+      display: inline-block;
+      padding: 10px 14px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #111;
+      background: #fafafa;
+    }
+    .cta:hover { background: #f0f0f0; }
+    address { font-style: normal; }
+    .signature { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Welcome to the <em>My Focus Area</em> app for Android!</h1>
+      <p class="muted">This is an Android app developed by <strong>Ahmet Sehriyaroglu</strong>.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card" aria-labelledby="data-collected">
+      <h2 id="data-collected">Data collected by the app</h2>
+      <p>
+        I hereby state, to the best of my knowledge and belief, that I have not programmed this app to collect any personally identifiable information.
+        All data created by you (the user) is stored locally on your device only, and can be simply erased by clearing the app's data or uninstalling it.
+        No analytics software is present in the app either.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="permissions" style="margin-top:16px">
+      <h2 id="permissions">Explanation of permissions requested in the app</h2>
+      <p>There are no extra permissions required by the app.</p>
+    </section>
+
+    <section class="card" aria-labelledby="contact" style="margin-top:16px">
+      <h2 id="contact">Questions or security issues</h2>
+      <p>
+        If you find any security vulnerability that has been inadvertently caused by me, or have any question regarding how the app protects your privacy,
+        please send me an email or post a discussion on GitHub, and I will surely try to fix it and help you.
+      </p>
+      <p>
+        <a class="cta" href="mailto:sehriyarogluahmet@gmail.com">Email Ahmet Sehriyaroglu</a>
+      </p>
+
+      <div class="signature">
+        <p>Yours sincerely,</p>
+        <p><strong>Ahmet Sehriyaroglu</strong></p>
+        <address>Ankara, Turkey</address>
+        <p><a href="mailto:sehriyarogluahmet@gmail.com">sehriyarogluahmet@gmail.com</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p class="muted">© <span id="year"></span> My Focus Area • Privacy &amp; Permissions</p>
+    </footer>
+  </main>
+
+  <script>
+    // Set current year in footer (no tracking, purely cosmetic)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
